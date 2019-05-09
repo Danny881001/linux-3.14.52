@@ -344,7 +344,7 @@
 		};
 		pinctrl_enet_rst: enetrstgrp {
 			fsl,pins = <
-				MX6QDL_PAD_ENET_REF_CLK__GPIO1_IO23 	0x80000000
+				MX6QDL_PAD_NANDF_D5__GPIO2_IO05 	0x80000000
 			>;
 		};
 
@@ -595,7 +595,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet &pinctrl_enet_irq &pinctrl_enet_rst>;
 	phy-mode = "rmii";
-	phy-reset-gpios = <&gpio1 23 0>;
+	phy-reset-gpios = <&gpio2 5 0>;
 	fsl,magic-packet;
 	status = "okay";
 };
